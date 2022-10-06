@@ -23,5 +23,4 @@ public class CompanyController {
 		companyService.joinCompany(joinDto);
 		return new CMRespDto<>(1, "기업 회원가입 성공", null);
 	}
-	
 }
