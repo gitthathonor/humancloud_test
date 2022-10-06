@@ -27,4 +27,9 @@ public class CompanyService {
 		
 	}
 
+	// 기업 회원 가입 주소 테스트
+	public void saveCompany(JoinDto joinDto) {
+		companyDao.save(joinDto.toEntity());
+	}
+
 }

@@ -17,7 +17,7 @@ public class AddressController {
 	private final AddressService addressService;
 	
 	@GetMapping("/address/saveForm")
-	public String saveJusoForm() {
+	public String saveAddressForm() {
 		return "addressSaveForm";
 	}
 	
