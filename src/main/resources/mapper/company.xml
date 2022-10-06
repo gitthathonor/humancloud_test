@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="site.metacoding.humancloud.domain.company.CompanyDao">
+	<insert id="save" useGeneratedKeys="true" keyProperty="companyId"> 
+		INSERT INTO company(company_username, company_password, company_name, company_email, company_phone_number, company_address,company_created_at)
+		VALUES(#{companyUsername}, #{companyPassword}, #{companyName}, #{companyEmail}, #{companyPhoneNumber}, #{companyAddress}, now())
+	</insert>
+	<select id="findById" resultType="site.metacoding.humancloud.domain.company.Company"></select>
+	<select id="findAll" resultType="site.metacoding.humancloud.domain.company.Company"></select>
+	<update id="update"></update>
+	<delete id="deleteById"></delete>
+</mapper>
