@@ -30,16 +30,4 @@ public class CompanyController {
 		companyService.joinCompany(joinDto);
 		return new CMRespDto<>(1, "기업 회원가입 성공", null);
 	}
-	
-//	@GetMapping("/saveForm")
-//	public String saveCompanyForm() {
-//		return "companySaveForm";
-//	}
-//	
-//	@PostMapping("/save")
-//	public @ResponseBody CMRespDto<?> saveCompany(JoinDto joinDto) {
-//		companyService.saveCompany(joinDto);
-//		return new CMRespDto<>(1, "기업 회원 가입 성공", null);
-//	}
-	
 }
