@@ -5,7 +5,7 @@
 <mapper namespace="site.metacoding.humancloud.domain.category.CategoryDao">
 	<insert id="save">
 		INSERT INTO category(category_user_id, category_company_id, category_name)
-		VALUES(#{categoryUserId},#{categoryCompanyId}, #{categoryName})
+		VALUES(#{categoryUserId}, #{categoryCompanyId}, #{categoryName})
 	</insert>
 	<select id="findById" resultType="site.metacoding.humancloud.domain.category.Category"></select>
 	<select id="findAll" resultType="site.metacoding.humancloud.domain.category.Category"></select>
