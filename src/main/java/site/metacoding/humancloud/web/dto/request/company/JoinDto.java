@@ -11,7 +11,7 @@ import site.metacoding.humancloud.domain.company.Company;
 @Setter
 @NoArgsConstructor
 public class JoinDto {
-	private Integer companyId;
+	private Integer companyId; // save한 이후에 id 값을 받기 위해서
 	private String companyUsername;
 	private String companyPassword;
 	private String companyName;
