@@ -10,6 +10,6 @@
 	<h2>출력화면</h2>
 	<h3>username : ${file.username }</h3>
 	<h3>password : ${file.password }</h3>
-	<img src="/img/${file.logo}">
+	<img src="/img/${file.logo}" style="width: 117px; height: 156px;">
 </body>
 </html>
