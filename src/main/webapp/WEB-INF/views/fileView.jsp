@@ -8,8 +8,8 @@
 </head>
 <body>
 	<h2>출력화면</h2>
-	<h3>username : </h3>
-	<h3>password : </h3>
-	<h3>logo : </h3>
+	<h3>username : ${file.username }</h3>
+	<h3>password : ${file.password }</h3>
+	<img src="/img/${file.logo}">
 </body>
 </html>

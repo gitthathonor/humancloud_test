@@ -15,4 +15,8 @@ public class TempService {
 	public void saveFile(Temp temp) {
 		tempDao.save(temp);
 	}
+	
+	public Temp viewFile(Integer id) {
+		return tempDao.findById(id);
+	}
 }

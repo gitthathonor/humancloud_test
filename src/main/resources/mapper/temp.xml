@@ -3,11 +3,15 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="site.metacoding.humancloud.domain.temp.TempDao">
-	<insert id="save" useGeneratedKeys="true" keyProperty="companyId"> 
+	<insert id="save" useGeneratedKeys="true" keyProperty="id"> 
 		INSERT INTO temp(username, password, logo)
 		VALUES(#{username}, #{password}, #{logo})
 	</insert>
-	<select id="findById" resultType="site.metacoding.humancloud.domain.temp.Temp"></select>
+	<select id="findById" resultType="site.metacoding.humancloud.domain.temp.Temp">
+		SELECT *
+		FROM temp
+		WHERE id = #{id}
+	</select>
 	<select id="findAll" resultType="site.metacoding.humancloud.domain.temp.Temp"></select>
 	<update id="update"></update>
 	<delete id="deleteById"></delete>

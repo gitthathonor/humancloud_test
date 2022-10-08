@@ -7,6 +7,7 @@ import site.metacoding.humancloud.domain.temp.Temp;
 @Getter
 @Setter
 public class SaveDto {
+	private Integer id;
 	private String username;
 	private String password;
 	private String logo;

@@ -10,7 +10,16 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Temp {
+	private Integer id;
 	private String username;
 	private String password;
 	private String logo;
+	
+	public Temp(String username, String password, String logo) {
+		this.username = username;
+		this.password = password;
+		this.logo = logo;
+	}
+	
+	
 }
