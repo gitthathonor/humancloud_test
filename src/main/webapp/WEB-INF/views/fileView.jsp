@@ -8,7 +8,8 @@
 </head>
 <body>
 	<h2>출력화면</h2>
-	
-	
+	<h3>username : </h3>
+	<h3>password : </h3>
+	<h3>logo : </h3>
 </body>
 </html>
