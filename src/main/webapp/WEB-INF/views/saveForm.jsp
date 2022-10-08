@@ -11,7 +11,7 @@
 		username:<input id="username" type="text" name="username">
 		password:<input id="password" type="password" name="password">
 		logo:<input id=file" type="file">
-		<button id="btnSave" type="button"></button>
+		<button id="btnSave" type="button">작성완료</button>
 	</form>
 </body>
 </html>
